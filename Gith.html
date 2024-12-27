@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)file:///C:/Users/Akshya/Documents/Sound%20Recordings/sourec.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height:
+             1.6;
+            color: #333;
+            background: linear-gradient(to right, #ba56de, #81d4fa);
+        }
+
+        header {
+            text-align: center;
+            padding: 2em 0;
+            background: #0f062e;
+            color: #fff;
+        }
+        .nav-links {
+      list-style: none;
+      text-align: center;
+      padding: 0;
+    }
+
+    .nav-links li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+
+
+        header h1 {
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background: #16023f;
+            color: #fff;
+        }
+
+        /* Team Section */
+        .team {
+            display: flex;
+            gap: 2em;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 2em;
+        }
+
+        .member {
+            background: #c5bdf1;
+            text-align: center;
+            padding: 1em;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 200px;
+        }
+
+        .member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .membersc img {
+            width: 100px;
+            height: 100px;
+            border-radius: 0%;
+        }
+
+        .member a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .member a h3 {
+            margin: 0.5em 0;
+        }
+
+        /* Individual Portfolio Section */
+        .portfolio {
+            display: none;
+            padding: 2em;
+            background: #c5bdf1;
+            margin: 2em auto;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(11, 6, 54, 0.1);
+        }
+
+        .portfolio.active {
+            display: block;
+        }
+
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: auto;
+            display: block;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #333;
+            display: inline-block;
+            margin-bottom: 1em;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1em;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skills-list li {
+            background: #f4f4f4;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+        }
+
+        .project {
+            margin-bottom: 1.5em;
+            background: #f9f9f9;
+            padding: 1em;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .contact-info {
+            text-align: center;
+            color: #e5f6e5;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .contact-item {
+            width: 45%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .contact-item h3 {
+            margin-top: 0;
+            color: #555;
+        }
+        .contact-item p {
+          
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .contact-item a {
+            text-decoration: none;
+            color: #5384e0;
+            font-weight: bold;
+        }
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        .small-photo {
+      width: 150px; /* Set the width */
+      height: auto; /* Maintain aspect ratio */
+      border: 2px solid #333; /* Optional styling */
+      border-radius: 10px; /* Optional rounded corners */
+    }.container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
+    .container {
+        color: #10102b;
+    }
+    .social-media-icons
+    {
+        margin-top: 15px;
+    }
+    .social-media-icons a {
+        margin: 0 15px;
+        text-decoration: none;
+    }
+    .social-media-icons img {
+        size: 15px;
+        width: 40px;
+        height: 40px;
+        transition: transform 0.3s;
+    }
+    .social-media-icons img:hover
+    {
+        transform: scale(1.2);
+    }
+    .section {
+      padding: 20px;
+      text-align: center;
+      color: #080808;
+    }
+    .proj {
+      display: flex;
+      justify-content: center;
+      gap: 1px;
+      
+    }
+
+    .projk {
+      background: #f6f7f9;
+      padding: 15px;
+      color : rgb(240, 231, 231);
+      border-radius: 5px;
+      width: 600px;
+      text-align: center;
+    }
+
+    .projects-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-flow: column;
+      display: flex;
+      justify-content: space-between;
+      max-width: 550px;
+      margin: 0 auto;
+    }
+
+    .project-card {
+      background: #c5bdf1;
+      padding: 15px;
+      color : rgb(11, 10, 10);
+      border-radius: 5px;
+      width: 600px;
+      text-align: center;
+      max-width: 550px;
+    }
+    
+  
+  
+    
+    .projects-grid img{
+        width: 150px;
+        height: auto;
+
+    } 
+    #about {
+        display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+}
+
+.about-container h3 {
+  font-size: 2rem;
+  color: #020202;
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+  
+      
+    
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Team</h1>
+        <p>Meet our talented team members.</p>
+    </header>
+    <header class="header">
+        <nav>
+          <ul class="nav-links">
+            <li><a href="file:///C:/Users/Akshya/Documents/Sound%20Recordings/sourec.html#about">About</a></li>
+            <li><a href="file:///C:/Users/Akshya/Documents/Sound%20Recordings/sourec.html#skills">Skills</a></li>
+            <li><a href="file:///C:/Users/Akshya/Documents/Sound%20Recordings/sourec.html#projects">Projects</a></li>
+            <li><a href="file:///C:/Users/Akshya/Documents/Sound%20Recordings/sourec.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+
+    <main>
+        <!-- Team Section -->
+        <section class="team">
+            <div class="member" onclick="showPortfolio(&#39;person1&#39;)">
+                <img src="./Gith_files/WhatsApp Image 2024-12-25 at 12.45.27_59aa4a46.jpg" alt="Person 1">
+                <h3>Akshaya</h3>
+                <p>Frontend Developer</p>
+            </div>
+            <div class="member" onclick="showPortfolio(&#39;person2&#39;)">
+                <img src="./Gith_files/WhatsApp Image 2024-12-25 at 13.29.19_94a4a2b6.jpg" alt="Person 2">
+                <h3>Deethya</h3>
+                <p>Backend Developer</p>
+            </div>
+            <div class="member" onclick="showPortfolio(&#39;person3&#39;)">
+                <img src="./Gith_files/WhatsApp Image 2024-12-25 at 13.29.00_97fda743.jpg" alt="Person 3">
+                <h3>Danila Selene</h3>
+                <p>UX/UI Designer</p>
+            </div>
+            <div class="member" onclick="showPortfolio(&#39;person4&#39;)">
+                <img src="./Gith_files/WhatsApp Image 2024-12-25 at 13.27.06_ff1f4335.jpg" alt="Person 4">
+                <h3>Harini</h3>
+                <p>Data Scientist</p>
+            </div>
+        </section>
+
+        <!-- Individual Portfolio Sections -->
+        <section id="person1" class="portfolio">
+            <a href="file:///C:/Users/Akshya/Documents/Sound%20Recordings/sourec.html#" class="back-link" onclick="hidePortfolio()">← Back to Team</a>
+            <img src="./Gith_files/WhatsApp Image 2024-12-25 at 12.45.27_59aa4a46.jpg" alt="Person 1" class="profile-pic">
+            <h1>Akshaya</h1>
+            <p>Frontend Developer</p>
+            <h2>About Me</h2>
+            <p>I am currently persuing 1st year in Electronic and Communication Engineering in Sree Eshwar colllege of Engineering .I am a artist.I completed C and C++ course with certifications.My specialisation Core is Embedded and IOT </p>
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>C and C++</li>
+            </ul>
+            <h2>Certifications:</h2>
+            <selection class="membersc">
+                <img src="./Gith_files/WhatsApp Image 2024-12-26 at 18.41.20_cc5d0d59.jpg">
+                
+
+                
+                <img src="./Gith_files/WhatsApp Image 2024-12-26 at 18.42.01_28ab0d8b.jpg">
+                
+            </selection>
+            <section>
+                <div class="container">
+                  <h1>Contact Details</h1>
+                  <p>Contact No : 6380488045 | Email ID : akshaya.k2024ece@seceiacin </p>
+                  <p>If you'd like to connect with us, you can find us on the following platforms:</p>
+                  
+                  <!-- Social Media Icons -->
+                  <div class="social-media-icons">
+                      <a href="https://www.linkedin.com/in/akshaya-k-ece-a23413337?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app" target="_blank">
+                          <img src="./Gith_files/WhatsApp Image 2024-12-25 at 15.04.45_2f399ecf.jpg" alt="LinkedIn Logo">
+                      </a>
+                      <a href="https://twitter.com/yourprofile" target="_blank">
+                          <img src="./Gith_files/WhatsApp Image 2024-12-25 at 15.04.10_dd808e0b.jpg" alt="Twitter Logo">
+                      </a>
+                      <a href="https://github.com/Akshaya1215" target="_blank">
+                          <img src="./Gith_files/WhatsApp Image 2024-12-25 at 15.16.37_87501390.jpg" alt="GitHub Logo">
+                      </a>
+                  </div>
+              </div>
+            </section>
+            
+        </section>
+
+        <section id="person2" class="portfolio active">
+            <a href="file:///C:/Users/Akshya/Documents/Sound%20Recordings/sourec.html#" class="back-link" onclick="hidePortfolio()">← Back to Team</a>
+            <img src="./Gith_files/WhatsApp Image 2024-12-25 at 13.29.19_94a4a2b6.jpg" alt="Person 2" class="profile-pic">
+            <h1>Deethya</h1>
+            <p>Backend Developer</p>
+            <h2>About Me</h2>
+            <p>I am a backend developer experienced in server-side technologies like Node.js, Python, and database management.</p>
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+            </ul>
+            <h2>Certifications:</h2>
+            <selection class="membersc">
+                <img src="./Gith_files/WhatsApp Image 2024-12-26 at 18.41.20_cc5d0d59.jpg">
+            </selection>
+            <section>
+                <div class="container">
+                  <h1>Contact Details</h1>
+                  <p>Contact No : 8468458361 | Email ID :deethya.T2024ece@seceiacin </p>
+                  <p>If you'd like to connect with us, you can find us on the following platforms:</p>
+                  
+                  <!-- Social Media Icons -->
+                  <div class="social-media-icons">
+                      <a href="https://www.linkedin.com/in/deethya-senthil-5b8a1b333?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app" target="_blank">
+                          <img src="./Gith_files/WhatsApp Image 2024-12-25 at 15.04.45_2f399ecf.jpg" alt="LinkedIn Logo">
+                      </a>
+                      <a href="https://twitter.com/yourprofile" target="_blank">
+                          <img src="./Gith_files/WhatsApp Image 2024-12-25 at 15.04.10_dd808e0b.jpg" alt="Twitter Logo">
+                      </a>
+                      <a href="https://github.com/deethya06" target="_blank">
+                          <img src="./Gith_files/WhatsApp Image 2024-12-25 at 15.16.37_87501390.jpg" alt="GitHub Logo">
+                      </a>
+                  </div>
+              </div>
+            </section>
+        </section>
+
+        <section id="person3" class="portfolio">
+            <a href="file:///C:/Users/Akshya/Documents/Sound%20Recordings/sourec.html#" class="back-link" onclick="hidePortfolio()">← Back to Team</a>
+            <img src="./Gith_files/WhatsApp Image 2024-12-25 at 13.29.00_97fda743.jpg" alt="Person 3" class="profile-pic">
+            <h1>Danila Selene</h1>
+            <p>UX/UI Designer</p>
+            <h2>About Me</h2>
+            <p>I design intuitive user interfaces and experiences that delight users and meet business objectives.</p>
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Figma</li>
+                <li>Adobe XD</li>
+                <li>Wireframing</li>
+                <li>Prototyping</li>
+            </ul>
+            <h2>Certifications:</h2>
+            <selection class="membersc">
+                <img src="./Gith_files/WhatsApp Image 2024-12-26 at 18.41.20_cc5d0d59.jpg">
+            </selection>
+            <section>
+                <div class="container">
+                  <h1>Contact Details</h1>
+                  <p>Contact No : 8745384312 | Email ID : danila.s2024ece@seceiacin </p>
+                  <p>If you'd like to connect with us, you can find us on the following platforms:</p>
+                  
+                  <!-- Social Media Icons -->
+                  <div class="social-media-icons">
+                      <a href="https://www.linkedin.com/in/danila-selene-025179330?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app" target="_blank">
+                          <img src="./Gith_files/WhatsApp Image 2024-12-25 at 15.04.45_2f399ecf.jpg" alt="LinkedIn Logo">
+                      </a>
+                      <a href="https://twitter.com/yourprofile" target="_blank">
+                          <img src="./Gith_files/WhatsApp Image 2024-12-25 at 15.04.10_dd808e0b.jpg" alt="Twitter Logo">
+                      </a>
+                      <a href="https://github.com/danila-selene" target="_blank">
+                          <img src="./Gith_files/WhatsApp Image 2024-12-25 at 15.16.37_87501390.jpg" alt="GitHub Logo">
+                      </a>
+                  </div>
+              </div>
+            </section>
+        </section>
+
+        <section id="person4" class="portfolio">
+            <a href="file:///C:/Users/Akshya/Documents/Sound%20Recordings/sourec.html#" class="back-link" onclick="hidePortfolio()">← Back to Team</a>
+            <img src="./Gith_files/WhatsApp Image 2024-12-25 at 13.27.06_ff1f4335.jpg" alt="Person 4" class="profile-pic">
+            <h1>Harini</h1>
+            <p>Data Scientist</p>
+            <h2>About Me</h2>
+            <p>Hi, I'm Harini , a first year student pursuing a degree in Electronics and communication. I have a strong passion for web development and am constantly learning new technologies, such as HTML, CSS, JavaScript, and React. As a student, I have had the opportunity to work on several personal projects and collaborate on team assignments, which have allowed me to develop both my technical skills and my ability to work well with others. I'm excited to build on my knowledge and apply it in real-world&nbsp;projects."</p>
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>R</li>
+                <li>Machine Learning</li>
+                <li>Data Visualization</li>
+            </ul>
+            <h2>Certifications:</h2>
+            <selection class="membersc">
+                <img src="./Gith_files/WhatsApp Image 2024-12-26 at 18.41.20_cc5d0d59.jpg">
+            </selection>
+            <section>
+                <div class="container">
+                  <h1>Contact Details</h1>
+                  <p>Contact No : 6574845432 | Email ID : fourmufs@gmail.com </p>
+                  <p>If you'd like to connect with us, you can find us on the following platforms:</p>
+                  
+                  <!-- Social Media Icons -->
+                  <div class="social-media-icons">
+                      <a href="https://www.linkedin.com/in/harini-venkatachalam-b81a1a333?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app" target="_blank">
+                          <img src="./Gith_files/WhatsApp Image 2024-12-25 at 15.04.45_2f399ecf.jpg" alt="LinkedIn Logo">
+                      </a>
+                      <a href="https://twitter.com/yourprofile" target="_blank">
+                          <img src="./Gith_files/WhatsApp Image 2024-12-25 at 15.04.10_dd808e0b.jpg" alt="Twitter Logo">
+                      </a>
+                      <a href="https://github.com/Harini162006" target="_blank">
+                          <img src="./Gith_files/WhatsApp Image 2024-12-25 at 15.16.37_87501390.jpg" alt="GitHub Logo">
+                      </a>
+                  </div>
+              </div>
+            </section>
+        </section>
+        <section id="about">
+            <div class="about-container">
+              <h3>About Us</h3>
+              <p>
+                </p><p>We are pursuing 1st Year Electronics and Communication Engineering at Sri Eshwar College of Engineering .We are developers with a passion for building clean and user-friendly applications. With expertise in various programming languages and tools, We enjoy crafting solutions that solve real-world problems.</p>        
+            
+              
+                <p>We enjoy working collaboratively in teams, as reflected in my recent project, the "Gen AI ChatBot," where we enhanced healthcare delivery with cutting-edge AI technology.
+              </p>
+            </div>
+          </section>
+        
+          
+        <section id="projects" class="section">
+            <centre>
+                <h2>Projects</h2>
+            </centre>
+            <div class="projects-grid">
+              <div class="project-card">
+                
+                <h3>Gen AI ChatBot</h3>
+                <img src="./Gith_files/WhatsApp Image 2024-12-25 at 13.50.24_26177071.jpg" alt="projects-grid">
+                <p>DESCRIPTION </p>
+                <p>This AI-driven chatbot provide following features:
+                  Enhance patient care by providing 24/7 support
+                  Offering accurate medical information
+                  Managing appointment schedules
+                  AI chatbots assist in remote monitoring and personalized treatment plans 
+                  Ensuring a higher quality of healthcare&nbsp;delivery</p>
+              </div>
+        
+    </div></section></main>
+    <section id="contact">
+        <div class="container">
+          <h1>Contact Details</h1>
+          <p>Contact No : 6574845432 | Email ID : fourmufs@gmail.com </p>
+          <p>If you'd like to connect with us, you can find us on the following platforms:</p>
+          
+          <!-- Social Media Icons -->
+          <div class="social-media-icons">
+              <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+                  <img src="./Gith_files/WhatsApp Image 2024-12-25 at 15.04.45_2f399ecf.jpg" alt="LinkedIn Logo">
+              </a>
+              <a href="https://twitter.com/yourprofile" target="_blank">
+                  <img src="./Gith_files/WhatsApp Image 2024-12-25 at 15.04.10_dd808e0b.jpg" alt="Twitter Logo">
+              </a>
+              <a href="https://github.com/yourprofile" target="_blank">
+                  <img src="./Gith_files/WhatsApp Image 2024-12-25 at 15.16.37_87501390.jpg" alt="GitHub Logo">
+              </a>
+          </div>
+      </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Team Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showPortfolio(id) {
+            document.querySelectorAll('.portfolio').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(id).classList.add('active');
+            window.scrollTo(0, 0);
+        }
+
+        function hidePortfolio() {
+            document.querySelectorAll('.portfolio').forEach(section => {
+                section.classList.remove('active');
+            });
+        }
+    </script>
+
+
+</body></html>
